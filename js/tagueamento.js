@@ -18,6 +18,7 @@ let download = document.getElementsByClassName('menu-lista-link menu-lista-downl
 }); 
 
 // Botões Análise
+let botoes = document.getElementsByClassName('card card-montadoras');
 for (let i = 0; i < botoes.length; i++) {
     let botao = botoes[i];
     botao.addEventListener('click', function (){
