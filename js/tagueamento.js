@@ -46,11 +46,6 @@ campoAceito.addEventListener('change', function() {
     ga('send', 'event', 'contato', 'aceito', 'preencheu')
 });
 
-let campoAceito = document.getElementById('aceito');
-campoAceito.addEventListener('change', function() {
-    ga('send', 'event', 'contato', 'aceito', 'preencheu')
-});
-
 let submit = document.getElementsByTagName('button')[0];
 submit.addEventListener('click', function() {
    ga('send', 'event', 'contato', 'enviado', 'enviado');
