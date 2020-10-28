@@ -27,27 +27,31 @@ for (let i = 0; i < botoes.length; i++) {
 }
 
 // Formulário
-let campoNome = document.getElementById('nome');
-campoNome.addEventListener('change', function() {
-    ga('send', 'event', 'contato', 'nome', 'preencheu')
-});
+if (document.getElementsByTagName('form')[0]) {
 
-let campoEmail = document.getElementById('email');
-campoEmail.addEventListener('change', function() {
-    ga('send', 'event', 'contato', 'email', 'preencheu')
-});
+    let campoNome = document.getElementById('nome');
+    campoNome.addEventListener('change', function() {
+        ga('send', 'event', 'contato', 'nome', 'preencheu')
+    });
 
-let campoTelefone = document.getElementById('telefone');
-campoTelefone.addEventListener('change', function() {
-    ga('send', 'event', 'contato', 'telefone', 'preencheu')
-});
+    let campoEmail = document.getElementById('email');
+    campoEmail.addEventListener('change', function() {
+        ga('send', 'event', 'contato', 'email', 'preencheu')
+    });
 
-let campoAceito = document.getElementById('aceito');
-campoAceito.addEventListener('change', function() {
-    ga('send', 'event', 'contato', 'aceito', 'preencheu')
-});
+    let campoTelefone = document.getElementById('telefone');
+    campoTelefone.addEventListener('change', function() {
+        ga('send', 'event', 'contato', 'telefone', 'preencheu')
+    });
 
-let submit = document.getElementsByTagName('button')[0];
-submit.addEventListener('click', function() {
-   ga('send', 'event', 'contato', 'enviado', 'enviado');
-});
+    let campoAceito = document.getElementById('aceito');
+    campoAceito.addEventListener('change', function() {
+        ga('send', 'event', 'contato', 'aceito', 'preencheu')
+    });
+
+    let submit = document.getElementsByTagName('button')[0];
+    submit.addEventListener('click', function() {
+    ga('send', 'event', 'contato', 'enviado', 'enviado');
+    });
+    
+}
